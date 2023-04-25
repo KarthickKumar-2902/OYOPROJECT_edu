@@ -5,6 +5,7 @@
 }
 body{
     width: 100%;
+    overflow-x: hidden;
 }
 ul{   
     list-style-type: none;
@@ -142,22 +143,40 @@ header{
     margin-bottom:50px;
     width: 100%;
     height: 70vh;
+    /* background-color: rgb(17, 0, 255); */
 }
-#info_section .info_container{
-    
+#info_section .info_container
+{
+    /* background-color: red; */
     width: 100%;
     height: 100%;
 }
+
 #info_section .info_container .info_images .worldimg img{ 
     width: 40%;
     margin-top: 5%;
     margin-left: 4%;
 }
+#info_section .info_container .info_images .place_map{
+    position: absolute;
+    margin-top: -25%;
+    width: 100%;
+    height: 350px;
+    /* background-color: rgb(240, 236, 236); */
+}
+#info_section .info_container .info_images .place_map img{ 
+    width: 5%;
+    /* background-color: rgb(14, 14, 14); */
+}
+#info_section .info_container .info_images .place_map .india{
+
+}
 #info_section .info_container .info_topics{
     display: flex;
     flex-direction: column;
     margin-left: 50%;
-    margin-top: -25%;
+    margin-top: -30%;
+    
 }
 #info_section .info_container .info_heading{
     line-height: 3.5;
@@ -367,5 +386,57 @@ footer{
 }
 
 
+
+
+
+
+@media screen and (max-width:1400px)
+{
+    body{
+
+    }
+}
+@media screen and (max-width:1325px){
+    .dropdown_cities{
+        width: 1325px;
+   
+        
+    }
+    .dropdown_cities ul{
+        margin-left: 4%;
+        width: 90%;
+    }
+    .dropdown_cities ul li{
+        margin-top: .8%;
+    }
+    #offer_section{
+        margin-left: -5%;
+    }
+    #ad_section{
+        margin-left: -8%;
+    }
+}
+@media screen and (max-width:1180px){
+    .dropdown_cities ul{
+        margin-left: 3%;
+        width: 80%;
+        
+    }
+}
+@media screen and (max-width:1007px){
+    .dropdown_cities ul{
+        margin-left: 3%;
+        width: 60%;
+    }
+}
+@media screen and (max-width:1400px){
+    
+}
+@media screen and (max-width:1400px){
+    
+}
+@media screen and (max-width:1400px){
+    
+}
 
 
