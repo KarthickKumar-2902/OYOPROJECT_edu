@@ -13,15 +13,16 @@
         <link rel="stylesheet" href="styles.css">
         <script src="script.js"></script>
         <script>
-            function darkmode(){
-                let mybody = document.body;
-                mybody.classList.toggle('dark_mode');
-                /*var dpdown= document.getElementsByTagName('select')[1];
-                dpdown.classList.toggle('dropdown_T');*/
-            }
+            window.onload = loadCoupon();
         </script>
     </head>
     <body>
+        <div id="main">
+
+        </div>
+        <div id="coupon">
+            <button onclick="closeCoupon()">&times;</button>
+        </div>
         <header>
             <div class="logo_img">
                 <img src="Images/Oyo_Rooms-Logo.png" alt="logo"/>
@@ -121,7 +122,7 @@
                 </div>
             </div>
         </section>
-<!--===============================================OFFER SECTION========================================================================================-->
+    <!--===============================================OFFER SECTION========================================================================================-->
         <section id="offer_section">
             <div class="offer_images">
                 <img src="Images/offers.avif">
@@ -182,7 +183,7 @@
                 </div>
             </div>
         </section>
-<!--======================================ABOUT SECTION===============================================================================-->
+    <!--======================================ABOUT SECTION===============================================================================-->
         <footer>
             <section id="about_section">
                 <span class="about_heading1">World's leading chain of hotels and homes.</span>
