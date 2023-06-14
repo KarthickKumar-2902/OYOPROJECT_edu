@@ -64,14 +64,14 @@ header{
 }
 .dropdown_cities ul{
     display: flex;
-    margin-left: 15%;
+    margin-left: 5%;
     /* justify-content: space-around; */
     /* position: absolute;
     margin:1% */
 }
 .dropdown_cities ul li{
     margin-top:.5%;
-    margin-right:7%;
+    margin-right:5%;
 }
 .dropdown_cities ul li:last-child{
     margin-top:1%;
@@ -80,11 +80,17 @@ header{
 .dropdown_cities ul li select{
     display: inline-block;
     /*width:90px;*/
+    border: none;
     height: 30px;
-    border:1px solid rgb(95, 16, 16);
     color: #4a4a4a;
     background:transparent;
     padding: 0px 10px;
+    transition: .3s ease;
+}
+.dropdown_cities ul li select:hover
+{
+    border:1px solid rgb(95, 16, 16);
+    
 }
 .dropdown_cities select{
     align-items: center;
@@ -128,7 +134,8 @@ header{
     height: 50px;
     margin-top: 0%;;
     margin-left: -14.9%;
-    border-radius: 40px;
+    border-top-right-radius: 40px;
+    border-bottom-right-radius: 40px;
     border: none;
 
 }
